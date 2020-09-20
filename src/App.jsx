@@ -11,11 +11,11 @@ import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 
 const Wrapper = styled.div`
-  ${tw`min-h-full`}
+  ${tw``}
 `;
 
 const Text = styled.h2`
-  ${tw`z-10 absolute text-white`}
+  ${tw`z-10 absolute text-black`}
   top: 40%;
   left: 50%;
   transform: translate(-50%, -40%);
@@ -28,7 +28,7 @@ function App() {
         <Wrapper>
           <Navbar />
           <Text>
-            <p>Some text which should be below my nav there is text here</p>
+            
           </Text>
 
           <Switch>

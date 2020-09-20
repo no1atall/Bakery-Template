@@ -14,7 +14,7 @@ const Links = styled.li`
   ${tw`mr-4 `}
 `;
 const NavLink = styled(Link)`
-  ${tw`text-white no-underline hover:text-secondary`}
+  ${tw`text-white no-underline hover:text-yellow-500`}
 `;
 
 const Nav = () => {

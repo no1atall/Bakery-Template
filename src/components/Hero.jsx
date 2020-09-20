@@ -1,31 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import Bread from "../images/bread.jpg";
+import Bread from "../images/bread2.jpg";
 
-const HeroWrapper = styled.main`
-  ${tw`text-2xl text-white relative flex justify-center`}
-`;
-
-const ImageWrapper = styled.div`
-  ${tw``}
+const HeroWrapper = styled.section`
+  ${tw`text-black w-full h-screen relative flex justify-center items-center`}
 `;
 
 const Image = styled.img`
-  ${tw`bg-cover max-w-screen h-screen lg:w-screen `}
+  ${tw`w-full h-screen bg-cover absolute`}
 `;
 
 const ContentWrapper = styled.div`
-  ${tw`absolute z-10 text-white flex flex-col items-center`}
+  ${tw`text-4xl absolute text-white`}
 `;
 
 const Hero = () => {
   return (
     <HeroWrapper>
-      <ImageWrapper>
-        <Image src={Bread} />
-      </ImageWrapper>
-      <ContentWrapper></ContentWrapper>
+      <Image src={Bread} />
+
+      <ContentWrapper>
+        <p>Some text which should be below my nav there is text here</p>
+      </ContentWrapper>
     </HeroWrapper>
   );
 };
