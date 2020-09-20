@@ -7,7 +7,7 @@ import Nav from "./Nav/Nav";
 import Logo from "./Nav/Logo";
 
 const NavWrapper = styled.nav`
-  ${tw`w-full h-20 bg-transparent text-primary flex flex-col  fixed z-10`}
+  ${tw`w-full h-20 bg-transparent text-primary flex flex-col cursor-pointer  fixed z-10`}
 `;
 
 const MenuWrapper = styled.div`
@@ -25,9 +25,12 @@ const LinksWrapper = styled.ul`
     rgba(149, 69, 53, 1) 45%,
     rgba(123, 63, 0, 1) 100%
   );
+  opacity: 95%;
 `;
 
-const Links = styled.li``;
+const Links = styled.li`
+  ${tw`my-1`}
+`;
 
 const StyledLink = styled(Link)`
   ${tw`text-4xl text-white no-underline hover:text-yellow-500`}
@@ -49,16 +52,24 @@ const Navbar = () => {
       </MenuWrapper>
       <LinksWrapper navOpen={navOpen}>
         <Links>
-          <StyledLink to="/">Home</StyledLink>
+          <StyledLink onClick={toggleOpen} to="/">
+            Home
+          </StyledLink>
         </Links>
         <Links>
-          <StyledLink to="/OurStory">OurStory</StyledLink>
+          <StyledLink onClick={toggleOpen} to="/OurStory">
+            OurStory
+          </StyledLink>
         </Links>
         <Links>
-          <StyledLink to="/Menu">Let's Eat</StyledLink>
+          <StyledLink onClick={toggleOpen} to="/Menu">
+            Let's Eat
+          </StyledLink>
         </Links>
         <Links>
-          <StyledLink to="/Contact">Contact</StyledLink>
+          <StyledLink onClick={toggleOpen} to="/Contact">
+            Contact
+          </StyledLink>
         </Links>
       </LinksWrapper>
     </NavWrapper>
