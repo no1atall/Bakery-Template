@@ -6,7 +6,7 @@ import tw from "tailwind.macro";
 import ReactLogo from "../../images/react.svg";
 
 const LogoWrapper = styled(Link)`
-  ${tw`text-2xl sm:text-3xl mt-8 pl-2 sm:pl-10 md:pl-16 no-underline text-white flex hover:text-yellow-500`}
+  ${tw`text-2xl sm:text-3xl mt-12 md:mt-8 pl-2 sm:pl-10 md:pl-16 no-underline text-white flex hover:text-yellow-500`}
 `;
 
 const TextWrapper = styled.h3`
