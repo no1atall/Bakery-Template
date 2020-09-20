@@ -15,7 +15,16 @@ const MenuWrapper = styled.div`
 `;
 
 const LinksWrapper = styled.ul`
-  ${tw`bg-yellow-900 w-screen right-0 absolute mt-32 py-4 list-none flex flex-col  items-center`}
+  ${tw` w-screen right-0 absolute mt-32 py-4 list-none flex flex-col  items-center md:hidden border rounded-bl-full rounded-tr-full`};
+  transform: ${({ navOpen }) =>
+    navOpen ? "translateX(0%)" : "translateX(100%)"};
+  transition: transform 0.5s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 168, 23, 1) 0%,
+    rgba(149, 69, 53, 1) 45%,
+    rgba(123, 63, 0, 1) 100%
+  );
 `;
 
 const Links = styled.li``;
@@ -38,7 +47,7 @@ const Navbar = () => {
         <Nav navOpen={navOpen} toggleOpen={toggleOpen} />
         <Burger navOpen={navOpen} toggleOpen={toggleOpen} />
       </MenuWrapper>
-      <LinksWrapper>
+      <LinksWrapper navOpen={navOpen}>
         <Links>
           <StyledLink to="/">Home</StyledLink>
         </Links>
