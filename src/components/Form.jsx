@@ -14,7 +14,7 @@ const Heading = styled.h1`
     ${tw`text-4xl mt-2`}
   }
 
-  a {
+  div {
     ${tw`text-3xl md:text-5xl text-gray-900 hover:text-yellow-600 `}
   }
 `;
@@ -68,7 +68,7 @@ const Form = () => {
       <Heading>
         Email Us
         <p>or</p>
-        <a href="#">Come Visit!</a>
+        <div>Come Visit!</div>
       </Heading>
       <Input
         name="name"
