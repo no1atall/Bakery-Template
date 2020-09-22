@@ -23,7 +23,7 @@ const LogoIconWrapper = styled.div`
 `;
 
 const logoData = {
-  text: "Grandma's Oven",
+  text: "Gramma's Oven",
   icon: "fas fa-bread-slice",
   src: ReactLogo,
 };

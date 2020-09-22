@@ -9,7 +9,7 @@ const MyButton = styled.div`
   
 `;
 const MyLink = styled.a`
-  ${tw`px-8 py-4 mt-12 text-lg text-white text-3xl no-underline border rounded-full hover:bg-yellow-600`}
+  ${tw`px-8 py-4 mt-12 text-lg text-white text-xl  md:text-3xl no-underline border rounded-full hover:bg-yellow-600`}
   background-color: #954535;
     
   ​

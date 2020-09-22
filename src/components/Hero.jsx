@@ -17,15 +17,15 @@ const ContentWrapper = styled.header`
 `;
 
 const Contenth1 = styled.h1`
-  ${tw`text-6xl`}
+  ${tw` text-2xl  md:text-6xl`}
 `;
 
 const Contenth2 = styled.h2`
-  ${tw`mt-8 md:mt-4 text-5xl`}
+  ${tw`mt-8 md:mt-4 text-2xl md:text-5xl`}
 `;
 
 const ContnetText = styled.p`
-  ${tw` sm:mt-12`}
+  ${tw` mt-8 sm:mt-12`}
 `;
 
 const Hero = (props) => {
@@ -36,11 +36,10 @@ const Hero = (props) => {
       <Image src={Bread} />
 
       <ContentWrapper>
-        <Contenth1>Grandma's Oven</Contenth1>
+        <Contenth1>Gramma's Oven</Contenth1>
         <Contenth2>
           <ContnetText>Fresh. European.</ContnetText>
           <ContnetText>Delicious!</ContnetText>
-          
         </Contenth2>
         <Button data={props} />
       </ContentWrapper>
