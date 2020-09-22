@@ -2,28 +2,47 @@ import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
 import Bread from "../images/bread.jpg";
+import Button from "./Button";
 
 const HeroWrapper = styled.section`
   ${tw`text-black w-full h-screen relative flex justify-center items-center`}
 `;
 
 const Image = styled.img`
-  ${tw`w-full h-screen bg-cover absolute`}
+  ${tw`w-full h-screen object-cover absolute`}
 `;
 
-const ContentWrapper = styled.div`
+const ContentWrapper = styled.header`
   ${tw`text-4xl absolute text-white text-center`}
 `;
 
-const Hero = () => {
+const Contenth1 = styled.h1`
+  ${tw`text-6xl`}
+`;
+
+const Contenth2 = styled.h2`
+  ${tw`mt-8 md:mt-4 text-5xl`}
+`;
+
+const ContnetText = styled.p`
+  ${tw` sm:mt-12`}
+`;
+
+const Hero = (props) => {
+  console.log(props);
+
   return (
     <HeroWrapper>
       <Image src={Bread} />
 
       <ContentWrapper>
-        <p>Some text which should be below my nav there is text here</p>
-        <p>Some more Text</p>
-        <button>Come and See Now!</button>
+        <Contenth1>Grandma's Oven</Contenth1>
+        <Contenth2>
+          <ContnetText>Fresh. European.</ContnetText>
+          <ContnetText>Delicious!</ContnetText>
+          
+        </Contenth2>
+        <Button data={props} />
       </ContentWrapper>
     </HeroWrapper>
   );

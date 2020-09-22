@@ -7,10 +7,21 @@ const Wrapper = styled.div`
   ${tw`w-full h-screen`}
 `;
 
+const Anchor = styled.div`
+  ${tw`h-full text-4xl flex justify-center items-center`}
+`
+
 const Home = () => {
+  const heroButton = {
+    id: "ImLinked",
+    tag: "#ImLinked",
+    text: "Come See!",
+  };
+  
   return (
     <Wrapper>
-      <Hero />
+      <Hero id={heroButton.tag} text={heroButton.text} />
+      <Anchor id={heroButton.id}>Some Linked text </Anchor>
     </Wrapper>
   );
 };
