@@ -9,13 +9,13 @@ const MyForm = styled.form`
 `;
 
 const Heading = styled.h1`
-  ${tw`text-center my-6 text-3xl md:text-5xl text-gray-900`}
+  ${tw`text-center my-6  text-xl md:text-3xl md:text-5xl text-gray-900`}
   p {
-    ${tw`text-4xl mt-2`}
+    ${tw`text-2xl md:text-4xl   md:mt-2`}
   }
 
   div {
-    ${tw`text-3xl md:text-5xl text-gray-900 hover:text-yellow-600 `}
+    ${tw`text-xl md:text-5xl text-gray-900 hover:text-yellow-600 `}
   }
 `;
 
@@ -24,11 +24,11 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
-  ${tw`text-xl lg:text-2xl rounded-md border h-48`}
+  ${tw`text-xl lg:text-2xl rounded-md border h-32 md:h-48`}
 `;
 
 const MyButton = styled.button`
-  ${tw`px-8 py-4 mt-12 text-lg mb-10 text-white text-3xl no-underline border rounded-full hover:bg-yellow-600`}
+  ${tw`px-8 py-4 mt-12 text-lg mb-10 text-white text-xl  md:text-3xl no-underline border rounded-full hover:bg-yellow-600`}
   background-color: #954535;
 `;
 
