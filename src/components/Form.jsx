@@ -9,7 +9,7 @@ const MyForm = styled.form`
 `;
 
 const Heading = styled.h1`
-  ${tw`text-center my-6  text-xl md:text-3xl md:text-5xl text-gray-900`}
+  ${tw`text-center mb-6 mt-2 md:mt-6 text-xl md:text-3xl md:text-5xl text-gray-900`}
   p {
     ${tw`text-2xl md:text-4xl   md:mt-2`}
   }
@@ -28,7 +28,7 @@ const TextArea = styled.textarea`
 `;
 
 const MyButton = styled.button`
-  ${tw`px-8 py-4 mt-12 text-lg mb-10 text-white text-xl  md:text-3xl no-underline border rounded-full hover:bg-yellow-600`}
+  ${tw`px-8 py-4 mt-6 md:mt-12 mb-5 md:mb-10 text-white text-xl  md:text-3xl no-underline border rounded-full hover:bg-yellow-600`}
   background-color: #954535;
 `;
 
