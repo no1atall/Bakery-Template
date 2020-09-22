@@ -7,7 +7,7 @@ import Nav from "./Nav/Nav";
 import Logo from "./Nav/Logo";
 
 const NavWrapper = styled.nav`
-  ${tw`w-full h-20 bg-transparent text-primary flex flex-col fixed z-10`}
+  ${tw`w-full h-16 bg-transparent flex flex-col fixed z-10`}
 `;
 
 const MenuWrapper = styled.div`
@@ -33,7 +33,7 @@ const Links = styled.li`
 `;
 
 const StyledLink = styled(Link)`
-  ${tw`text-4xl text-white no-underline hover:text-yellow-500`}
+  ${tw`text-2xl text-white no-underline hover:text-yellow-500`}
 `;
 
 const Navbar = () => {
