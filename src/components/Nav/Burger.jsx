@@ -4,7 +4,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 const BurgerWrapper = styled.div`
-  ${tw`block md:hidden text-white text-4xl  mt-6 mr-8 cursor-pointer `}
+  ${tw`block md:hidden text-white text-4xl  mt-4 mr-8 cursor-pointer `}
 `;
 
 const Icon = styled.div``;

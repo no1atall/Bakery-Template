@@ -15,7 +15,7 @@ const MenuWrapper = styled.div`
 `;
 
 const LinksWrapper = styled.ul`
-  ${tw` w-screen right-0 absolute mt-32 py-4 list-none flex flex-col  items-center md:hidden border rounded-bl-full rounded-tr-full`};
+  ${tw` w-screen right-0 absolute mt-24 py-4 list-none flex flex-col  items-center md:hidden border rounded-bl-full rounded-tr-full`};
   transform: ${({ navOpen }) =>
     navOpen ? "translateX(0%)" : "translateX(100%)"};
   transition: transform 0.5s ease-in-out;
