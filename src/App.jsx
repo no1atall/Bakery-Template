@@ -27,9 +27,7 @@ function App() {
       <Router>
         <Wrapper>
           <Navbar />
-          <Text>
-            
-          </Text>
+          <Text></Text>
 
           <Switch>
             <Route path="/OurStory">
@@ -48,7 +46,7 @@ function App() {
           </Switch>
         </Wrapper>
       </Router>
-    </div>   
+    </div>
   );
 }
 
