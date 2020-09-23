@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `;
 
 const SectionWrapper = styled.section`
-  ${tw`flex flex-col justify-center items-center md:text-center mb-6 mx-2 sm:mx-32 max-w-screen-md`}
+  ${tw`flex flex-col justify-center items-center md:text-center mb-4 mx-2 sm:mx-32 max-w-screen-md`}
 `;
 
 const Title = styled.h1`
@@ -15,11 +15,11 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  ${tw`text-xl mb-2`}
+  ${tw`text-lg mb-2`}
 `;
 
 const Text = styled.p`
-  ${tw`mb-2`}
+  ${tw`mb-1`}
 `;
 
 const Story = () => {
