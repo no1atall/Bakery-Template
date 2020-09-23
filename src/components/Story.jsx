@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 const Wrapper = styled.div`
-  ${tw`absolute text-white mt-32 `}
+  ${tw`absolute text-white `}
 `;
 
 const SectionWrapper = styled.section`
@@ -19,7 +19,7 @@ const SubTitle = styled.h2`
 `;
 
 const Text = styled.p`
-  ${tw`mb-1`}
+  ${tw`mb-1 text-sm`}
 `;
 
 const Story = () => {

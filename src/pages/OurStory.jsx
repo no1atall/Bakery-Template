@@ -5,7 +5,7 @@ import breadBoard from "../images/bread-board.jpg";
 import Story from "../components/Story";
 
 const Wrapper = styled.main`
-  ${tw`relative flex justify-center `}
+  ${tw`relative flex justify-center items-center`}
 `;
 
 const Image = styled.img`
