@@ -7,7 +7,7 @@ import Nav from "./Nav/Nav";
 import Logo from "./Nav/Logo";
 
 const NavWrapper = styled.nav`
-  ${tw`w-full h-16 bg-gray-900 flex flex-col z-10`}
+  ${tw`w-full h-16 bg-transparent flex flex-col fixed z-10`}
 `;
 
 const MenuWrapper = styled.div`
