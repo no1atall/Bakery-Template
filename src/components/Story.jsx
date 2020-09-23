@@ -3,11 +3,11 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 const Wrapper = styled.div`
-  ${tw`absolute text-white flex justify-center items-center flex-col `}
+  ${tw`absolute text-white mt-32 `}
 `;
 
 const SectionWrapper = styled.section`
-  ${tw`flex flex-col justify-center items-center md:text-center mb-4 mx-2 sm:mx-32 max-w-screen-md`}
+  ${tw`flex flex-col justify-center items-center md:text-center mb-4 mx-12 sm:mx-32 max-w-screen-md`}
 `;
 
 const Title = styled.h1`
